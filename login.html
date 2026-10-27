@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipo El susurro de la madera">
+    <meta name="description" content="Inicia sesión o crea una cuenta en El susurro de la madera.">
+    <title>Iniciar sesión | El susurro de la madera</title>
+    <link rel="icon" type="image/png" sizes="256x256" href="./Image/Logo-redondeado.png?v=2">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/scripts.js" defer></script>
+</head>
+<body class="login-page" data-page="login">
+    <header class="site-header login-header">
+        <a class="brand" href="index.html" aria-label="El susurro de la madera, inicio"><img class="brand-mark" src="Image/Logo.png" alt="" aria-hidden="true"><span>El susurro<span class="brand-light"> de la madera</span></span></a>
+        <a class="login-back" href="index.html">Volver al inicio</a>
+    </header>
+    <main class="login-main">
+        <section class="login-card" aria-labelledby="login-title">
+            <div id="login-success" class="login-success" role="status" aria-live="assertive" hidden>
+                <span class="login-success-icon" aria-hidden="true">✓</span>
+                <p class="login-success-eyebrow">TODO LISTO</p>
+                <h1 id="login-success-title">Sesión iniciada con éxito</h1>
+                <p class="login-success-note">Te llevaremos a la página principal en un instante.</p>
+            </div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> TU ESPACIO</p>
+            <h1 id="login-title">Inicia sesión<br><span>en tu cuenta.</span></h1>
+            <p class="login-intro">Ingresa tu nombre de usuario o correo electrónico y contraseña.</p>
+            <form id="login-form" class="login-form" novalidate>
+                <label for="admin-user">Nombre de usuario o correo electrónico</label>
+                <input id="admin-user" name="username" autocomplete="username" required>
+                <label for="admin-password">Contraseña</label>
+                <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+                <p class="form-error" id="login-error" role="alert" aria-live="assertive"></p>
+                <button class="button button-dark" type="submit">Iniciar sesión</button>
+            </form>
+            <a class="account-switch" href="#account-form" id="account-create-link">¿No tienes usuario? Crea una cuenta</a>
+            <form id="account-form" class="login-form account-form" novalidate hidden>
+                <label for="account-name">Nombre</label>
+                <input id="account-name" name="name" autocomplete="name" required>
+                <label for="account-username">Nombre de usuario</label>
+                <input id="account-username" name="username" autocomplete="username" required>
+                <label for="account-email">Correo electrónico</label>
+                <input id="account-email" name="email" type="email" autocomplete="email" required>
+                <label for="account-password">Contraseña (mínimo 8 caracteres)</label>
+                <input id="account-password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+                <label for="account-password-confirm">Repite la contraseña</label>
+                <input id="account-password-confirm" name="password-confirm" type="password" autocomplete="new-password" minlength="8" required>
+                <p class="form-error" id="account-error" role="alert" aria-live="assertive"></p>
+                <button class="button button-dark" type="submit">Crear cuenta</button>
+                <a class="account-switch" href="#login-form" id="account-login-link">Volver al inicio de sesión</a>
+            </form>
+            <p class="form-feedback" id="account-feedback" role="status" aria-live="polite"></p>
+            <div class="login-form account-session" id="account-session" hidden>
+                <p id="account-session-message" role="status"></p>
+                <a class="button button-outline" id="admin-session-link" href="contacto.html" hidden>Ir a administración</a>
+                <button class="button button-outline" id="account-session-logout" type="button">Cerrar sesión</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

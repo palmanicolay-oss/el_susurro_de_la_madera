@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipo El susurro de la madera">
+    <meta name="description" content="Explora adornos de mariquitas, llaveros grabados, portavasos de oja y cajas de recuerdos hechos a mano en El susurro de la madera.">
+    <meta name="keywords" content="adorno de mariquitas, llavero grabado, portavasos de oja, caja de recuerdos, artesanía en madera chile">
+    <title>Catálogo de madera | El susurro de la madera</title>
+    <link rel="icon" type="image/png" sizes="256x256" href="./Image/Logo-redondeado.png?v=2">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/scripts.js" defer></script>
+</head>
+<body data-page="catalog">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="El susurro de la madera, inicio"><img class="brand-mark" src="Image/Logo.png" alt="" aria-hidden="true"><span>El susurro<span class="brand-light"> de la madera</span></span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal"><a class="nav-link" href="index.html">Inicio</a><a class="nav-link" href="nosotros.html">Quienes somos</a><a class="nav-link active" href="servicios.html" aria-current="page">Servicios</a><div class="nav-login-wrap"><button class="nav-link nav-login-toggle" id="account-menu-toggle" type="button" aria-expanded="false" aria-controls="account-menu">Cuenta</button><div class="account-menu" id="account-menu" hidden>        <p class="account-menu-status" id="account-menu-status" role="status">No has iniciado sesión.</p><div class="account-menu-cart" id="account-menu-cart" hidden><p class="account-menu-user" id="account-menu-user"></p><h2>Carrito</h2><ul id="account-menu-items"></ul><p class="account-menu-empty" id="account-menu-empty">No tienes productos en el carrito.</p><p class="account-menu-total"><span>Total</span><strong id="account-menu-total"></strong></p></div><a class="account-menu-action" id="account-menu-login" href="login.html">Iniciar sesión</a><button class="account-menu-action" id="account-menu-logout" type="button" hidden>Cerrar sesión</button></div></div><a class="nav-contact" href="contacto.html">Contacto <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main>
+        <section class="page-heading page-wrap"><p class="eyebrow"><span class="eyebrow-dot"></span> PIEZAS DE NUESTRO TALLER</p><h1>Elige una pieza.<br><span>Hazla tuya.</span></h1><p class="heading-intro">Madera seleccionada, terminaciones cuidadas y detalles que puedes personalizar. Los valores están expresados en pesos chilenos.</p></section>
+        <section class="catalog-section page-wrap" aria-label="Catálogo de productos">
+            <div class="catalog-toolbar"><p id="catalog-count" aria-live="polite"></p><p>10% de descuento desde 3 unidades iguales</p></div>
+            <div class="product-grid" id="product-grid"></div>
+            <section class="cart-summary" aria-labelledby="cart-title"><div><p class="eyebrow">TU SELECCIÓN</p><h2 id="cart-title">Pedido actual</h2><div class="cart-current-items" id="cart-items" aria-live="polite">Aún no agregas productos.</div><div class="cart-total"><span>Total</span><strong id="cart-total">$0</strong></div><button class="button button-dark" id="save-order" type="button" disabled>Guardar pedido <span aria-hidden="true">↗</span></button></div><p class="form-feedback" id="cart-feedback" role="status" aria-live="polite"></p></section>
+        </section>
+        <section class="callout-band"><div class="page-wrap callout-inner"><div><p class="eyebrow">¿TIENES UNA IDEA EN MENTE?</p><h2>Hablemos de tu<br>pieza personalizada.</h2></div><a class="button button-light" href="contacto.html">Solicitar personalización <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-main page-wrap">
+            <div class="footer-brand-block"><a class="brand brand-footer" href="index.html" aria-label="El susurro de la madera, inicio"><img class="brand-mark" src="Image/Logo.png" alt="" aria-hidden="true"><span>El susurro<span class="brand-light"> de la madera</span></span></a><p>Decoraciones y regalos hechos a mano, con madera y cuidado en cada detalle.</p><a class="footer-cta" href="contacto.html">Encarga una pieza <span aria-hidden="true">↗</span></a></div>
+            <nav class="footer-links" aria-label="Enlaces del pie de página"><h2>Explora</h2><a href="index.html">Inicio</a><a href="nosotros.html">Quienes somos</a><a href="servicios.html">Servicios</a></nav>
+            <div class="footer-invite"><h2>¿Tienes una idea?</h2><p>Cuéntanos qué te gustaría crear y conversemos los detalles de tu pedido personalizado.</p><a href="servicios.html">Ver catálogo y precios <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="footer-bottom"><div class="page-wrap"><p>© 2026 El susurro de la madera</p><p>Hecho con oficio en Chile.</p><a href="index.html">Volver al inicio ↑</a></div></div>
+    </footer>
+</body>
+</html>
